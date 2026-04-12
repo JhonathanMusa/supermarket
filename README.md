@@ -5,6 +5,10 @@ Desarrollado con **Node.js**, **Express**, **PostgreSQL** y **Sequelize ORM**.
 
 ---
 
+## Integrantes 
+
+- Jhonathan Salazar Muñoz - Arquitecto de soluciones y desarrollador
+
 ## Requisitos
 
 - Node.js v18+
