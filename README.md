@@ -42,6 +42,26 @@ DB_PORT=5432
 
 ---
 
+## Base de datos
+
+> **Importante:** la base de datos debe crearse manualmente antes de iniciar el servidor. Las tablas se generan automáticamente al arrancar gracias a `sequelize.sync()`, pero la base de datos en sí no.
+
+Conéctate a PostgreSQL y ejecuta:
+
+```sql
+CREATE DATABASE supermarket_db;
+```
+
+O desde la terminal:
+
+```bash
+psql -U postgres -c "CREATE DATABASE supermarket_db;"
+```
+
+Una vez creada la base de datos, al ejecutar `npm start` Sequelize creará todas las tablas automáticamente.
+
+---
+
 ## Ejecución
 
 ```bash
