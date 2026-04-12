@@ -12,11 +12,6 @@ const seedController = require('../controllers/SeedController');
  *       200:
  *         description: Base de datos poblada
  */
-router.post('/', (req, res, next) => {
-    if (process.env.NODE_ENV === 'production') {
-        return res.status(403).json({ message: 'No disponible en producción' });
-    }
-    next();
-}, seedController.runSeed);
+router.post('/', seedController.runSeed);
 
 module.exports = router;
