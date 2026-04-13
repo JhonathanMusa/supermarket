@@ -31,7 +31,7 @@ exports.runSeed = async (req, res) => {
             { name: 'Manzanas', price: 12, stock: 50, providerId: providers[1].id },
             { name: 'Tomates', price: 8, stock: 20, providerId: providers[1].id },
             { name: 'Huevos', price: 35, stock: 2, providerId: providers[1].id },
-            { name: 'Leche', price: 2, stock: 2, providerId: providers[1].id },
+            { name: 'Leche', price: 2, stock: 2, providerId: providers[2].id },
         ]);
 
         // 5. Crear una Venta de ejemplo
